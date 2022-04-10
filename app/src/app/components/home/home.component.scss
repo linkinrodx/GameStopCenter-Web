@@ -1,0 +1,65 @@
+
+$footer : #c5c4c4;
+$products : #e2e2e2;
+$header : #c5c4c4;
+$carousel : #fff;
+
+:host{
+    section{
+        padding: 30px;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .header{
+        background-color: $header;
+
+        .icons-login{
+            i{
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .carousel{
+        background-color: $header;
+        padding: 0;
+    }
+    
+    .products{
+        background-color: $products;
+        padding: 50px 30px;
+
+        .product{
+            padding: 10px 50px;
+
+            .product-border{
+                border: 1px solid rgb(131, 131, 131);
+                padding: 20px 10px;
+    
+                .product-description{
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+    
+    .footer{
+        background-color: $footer;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+
+        .copy{
+            text-align: left;
+
+            span{
+                opacity: 50%;
+            }
+        }
+    }
+}
+
