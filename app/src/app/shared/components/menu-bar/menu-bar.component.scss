@@ -1,0 +1,21 @@
+:host{
+    .navbar{
+        background-color: #000 !important;
+        font-size: 25px;
+        text-transform: uppercase;
+
+        :link{
+            color: #FFF !important;
+        }
+
+        .dropdown-item{
+            color: #000 !important;
+        }
+
+        #menu-content{
+            .nav-item{
+                margin: 0 10px;
+            }
+        }
+    }
+}

@@ -1,23 +1,32 @@
 
-$footer : #c5c4c4;
+$header : #ffffff;
 $products : #e2e2e2;
-$header : #c5c4c4;
 $carousel : #fff;
+$footer : #c5c4c4;
 
 :host{
     section{
-        padding: 30px;
+        padding: 10px;
         text-align: center;
-        justify-content: space-around;
     }
 
     .header{
         background-color: $header;
+        display: flex; 
 
-        .icons-login{
-            i{
-                margin: 0 5px;
-            }
+        .div-logo{
+            flex-grow: 1;
+        }
+
+        .div-search{
+            display: flex;
+            margin: 25px 0;
+            flex-grow: 2;
+        }
+
+        .div-icons{
+            margin: 25px 0;
+            flex-grow: 1;
         }
     }
 
