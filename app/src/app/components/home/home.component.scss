@@ -1,7 +1,9 @@
 
 $header : #ffffff;
-$products : #e2e2e2;
 $carousel : #fff;
+// $features : #d4d4d4;
+$features : #fff;
+$products : #e2e2e2;
 $footer : #c5c4c4;
 
 :host{
@@ -33,6 +35,32 @@ $footer : #c5c4c4;
     .carousel{
         background-color: $header;
         padding: 0;
+    }
+
+    .brands{
+        padding: 40px 0;
+    }
+
+    .features{
+        background-color: $features;
+        font-size: 20px;
+        padding: 30px 0;
+
+        .div-item{
+            padding: 10px 40px;
+
+            span{
+                font-size: 40px;
+    
+                i{
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        hr{
+            background-color: #b6b6b6;
+        }
     }
     
     .products{
