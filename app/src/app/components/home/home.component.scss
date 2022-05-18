@@ -1,5 +1,4 @@
 
-$header : #ffffff;
 $carousel : #fff;
 // $features : #d4d4d4;
 $features : #fff;
@@ -12,28 +11,8 @@ $footer : #c5c4c4;
         text-align: center;
     }
 
-    .header{
-        background-color: $header;
-        display: flex; 
-
-        .div-logo{
-            flex-grow: 1;
-        }
-
-        .div-search{
-            display: flex;
-            margin: 25px 0;
-            flex-grow: 2;
-        }
-
-        .div-icons{
-            margin: 25px 0;
-            flex-grow: 1;
-        }
-    }
-
     .carousel{
-        background-color: $header;
+        background-color: $carousel;
         padding: 0;
     }
 

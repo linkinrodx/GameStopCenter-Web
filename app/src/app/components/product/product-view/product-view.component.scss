@@ -1,0 +1,90 @@
+$color1 : #000;
+$color2 : #111;
+$color3 : #999999;
+$color4 : #bdbdbd;
+$title : #555555;
+$colorRed : #e52421;
+
+:host{
+    color: $color4;
+    text-decoration: none;
+
+    .breadcrumb{
+        text-transform: uppercase;
+        padding: 15px 10px 0 0;
+        font-size: 20px;
+
+        a:link, a:visited, a:active{
+            color: $color4;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $color2;
+        }
+    }
+
+    .pt-images{
+        padding: 0 0 15px 0;
+    }
+    
+    .pt-description{
+        padding: 0 0 0 40px;
+        color: $color3;
+
+        h2{
+            font-size: 34px;
+            font-weight: bold;
+            color: $title;
+        }
+
+        p{
+            font-size: 30px;
+            padding: 20px 10px 0 0;
+
+            span{
+                padding-right: 15px;
+            }
+
+            .old-price{
+                text-decoration: line-through;
+            }
+
+            .offer-price{
+                font-weight: bold;
+            }
+        }
+
+        ul{
+            padding: 0 20px;
+            font-size: 18px;
+
+            li{
+                padding: 4px 0;
+            }
+        }
+
+        .div-quantity{
+            display: flex;
+
+            input{
+                max-width: 100px;
+                margin-right: 20px;
+            }
+
+            button{
+                max-width: 220px;
+                width: 100%;
+                font-size: 17px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .pt-footer{
+        .category{
+            color: $colorRed;
+        }
+    }
+}
