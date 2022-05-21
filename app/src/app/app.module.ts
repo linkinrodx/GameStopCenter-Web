@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.component';
 import { ProductViewComponent } from './components/product/product-view/product-view.component';
 import { HeaderComponent } from './shared/components/header/header.component';
+import { RelatedProductsComponent } from './shared/components/related-products/related-products.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './shared/components/header/header.component';
     HomeComponent,
     MenuBarComponent,
     ProductViewComponent,
-    HeaderComponent
+    HeaderComponent,
+    RelatedProductsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

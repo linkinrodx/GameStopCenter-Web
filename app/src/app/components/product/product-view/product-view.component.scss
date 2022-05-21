@@ -24,67 +24,114 @@ $colorRed : #e52421;
         }
     }
 
-    .pt-images{
-        padding: 0 0 15px 0;
-    }
+    .view{
+        padding: 10px 0 55px 0;
+
+        .pt-images{
+            padding: 0 0 15px 0;
     
-    .pt-description{
-        padding: 0 0 0 40px;
-        color: $color3;
-
-        h2{
-            font-size: 34px;
-            font-weight: bold;
-            color: $title;
+            .product-row{
+                padding: 15px 0;
+    
+                .product-item{
+                    padding: 0;
+                    margin: 0 10px;
+                    border: $color3 1.5px solid;
+                    opacity: 50%;
+                }
+    
+                .product-item:hover{
+                    opacity: 100%;
+                    cursor: pointer;
+                }
+    
+                .product-item.active{
+                    opacity: 100%;
+                }
+            }
         }
-
-        p{
-            font-size: 30px;
-            padding: 20px 10px 0 0;
-
-            span{
-                padding-right: 15px;
-            }
-
-            .old-price{
-                text-decoration: line-through;
-            }
-
-            .offer-price{
+        
+        .pt-description{
+            padding: 0 0 0 40px;
+            color: $color3;
+    
+            h2{
+                font-size: 34px;
                 font-weight: bold;
+                color: $title;
+            }
+    
+            .div-price{
+                p{
+                    font-size: 30px;
+                    padding: 20px 10px 0 0;
+        
+                    span{
+                        padding-right: 15px;
+                    }
+        
+                    .old-price{
+                        text-decoration: line-through;
+                    }
+        
+                    .offer-price{
+                        font-weight: bold;
+                        color: $color2;
+                    }
+                }
+            }
+            
+            .div-features{
+                ul{
+                    padding: 0 20px;
+                    font-size: 18px;
+        
+                    li{
+                        padding: 4px 0;
+                    }
+                }
+            }
+    
+            .div-quantity{
+                display: flex;
+    
+                input{
+                    max-width: 100px;
+                    margin-right: 20px;
+                }
+    
+                button{
+                    max-width: 220px;
+                    width: 100%;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }            
+
+            .div-footer{
+                font-size: 14px;
+                padding: 15px 0;
+
+                .category{
+                    color: $colorRed;
+                }
+
+                .category:link{
+                    text-decoration: none;
+                }
             }
         }
+    }    
 
-        ul{
-            padding: 0 20px;
-            font-size: 18px;
-
-            li{
-                padding: 4px 0;
-            }
-        }
-
-        .div-quantity{
+    .features{
+        .nav-tabs{
             display: flex;
-
-            input{
-                max-width: 100px;
-                margin-right: 20px;
-            }
-
-            button{
-                max-width: 220px;
-                width: 100%;
-                font-size: 17px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
+            justify-content: center;
         }
-    }
 
-    .pt-footer{
-        .category{
-            color: $colorRed;
+        .tab-pane{
+            padding: 30px 0;
         }
     }
 }

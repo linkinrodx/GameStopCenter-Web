@@ -1,0 +1,18 @@
+$footer : #1d1d1d;
+
+.footer{
+    background-color: $footer;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .copy{
+        text-align: left;
+
+        span{
+            opacity: 50%;
+        }
+    }
+}

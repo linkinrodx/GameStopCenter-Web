@@ -1,0 +1,19 @@
+<div class="container">
+    <hr>
+    <div class="row">
+        <h3>Productos Relacionados</h3>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of list" class="col-12 col-sm-6 col-md-3 product-item" style="display: block">
+            <img [src]="item.image1" [alt]="item.title">
+
+            <p>{{item.category}}</p>
+            <h5>{{item.title}}</h5>
+            <p>
+                <span class="old-price">S/ {{item.oldPrice}} </span>
+                <span class="new-price">S/ {{item.newPrice}}</span>
+            </p>
+            <button type="button" class="btn btn-success">Añadir al carrito</button>
+        </div>
+    </div>
+</div>
