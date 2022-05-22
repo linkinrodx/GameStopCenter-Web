@@ -1,0 +1,17 @@
+$coloreBlack : #555555;
+$coloreWhite : #fff;
+
+:host{
+    a{
+        cursor: pointer;
+        color: $coloreBlack;
+    }
+
+    .page-item.active{
+        .page-link{
+            color: $coloreWhite;
+            background-color: $coloreBlack;
+            border-color: $coloreBlack;
+        }
+    }
+}

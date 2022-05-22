@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<app-menu-bar></app-menu-bar>
+
+<section class="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 div-filters">
+                <aside class="bd-sidebar">
+                    <h3>Filtros</h3>
+                    <app-filters></app-filters>
+                </aside>
+            </div>
+            <div class="col-8 div-products">
+                <div class="row">
+                    <div *ngFor="let item of listProducts; let i = index"
+                        class="col-12 col-sm-6 col-md-6 col-lg-4 product-item">
+
+                        <img [src]="item.image1" [alt]="item.title">
+
+                        <p>{{item.category}}</p>
+                        <h5>{{item.title}}</h5>
+                        <p>
+                            <span class="old-price">S/ {{item.oldPrice}} </span>
+                            <span class="new-price">S/ {{item.newPrice}}</span>
+                        </p>
+                        <button type="button" class="btn btn-success">Añadir al carrito</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <app-pagination></app-pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

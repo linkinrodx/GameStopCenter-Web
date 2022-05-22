@@ -34,7 +34,7 @@ export class ProductViewComponent implements OnInit {
         active : false
       }
     ]
-  }
+  };
 
   constructor() { }
 

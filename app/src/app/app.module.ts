@@ -10,6 +10,9 @@ import { ProductViewComponent } from './components/product/product-view/product-
 import { HeaderComponent } from './shared/components/header/header.component';
 import { RelatedProductsComponent } from './shared/components/related-products/related-products.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { StoreComponent } from './components/store/store.component';
+import { FiltersComponent } from './components/store/filters/filters.component';
+import { PaginationComponent } from './shared/components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     ProductViewComponent,
     HeaderComponent,
     RelatedProductsComponent,
-    FooterComponent
+    FooterComponent,
+    StoreComponent,
+    FiltersComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
